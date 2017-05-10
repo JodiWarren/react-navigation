@@ -17,6 +17,7 @@ export default (
   stackConfig: StackNavigatorConfig = {}
 ) => {
   const {
+    stateName,
     initialRouteName,
     initialRouteParams,
     paths,
@@ -30,6 +31,7 @@ export default (
   } = stackConfig;
 
   const stackRouterConfig = {
+    stateName,
     initialRouteName,
     initialRouteParams,
     paths,
